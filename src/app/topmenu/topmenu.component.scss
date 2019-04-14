@@ -1,12 +1,39 @@
-.topmenu {
-    height: 60px;
+.topoSite {
     width: 100%;
-    line-height: 60px;
-    background-color: #FCFCFC;
-    color: white;   
+    height: 20px;
+    margin-bottom: 2px;    
+    float: left;
+    background: #FAFAFA;
+    position: fixed;
+    top: 0;
 }
+// .topmenu {
+//     height: 60px;
+//     width: 100%;
+//     line-height: 60px;
+//     background-color: #FCFCFC;
+//     color: white;   
+// }
+
+// .logotop {
+//     height: 120px;
+//     width: auto;
+//     border-bottom-left-radius: 30px;
+//     border-bottom-right-radius: 30px;
+// }
 
 .logo {
-    height: 60px;
+    height: 40px;
     width: auto;
+}
+
+.efeitoLogo {
+    height: 120px;
+    width: 250px;    
+    position: absolute;
+    z-index: 10;
+    margin-top: 40px;
+    background-color: #FCFCFC;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
 }
