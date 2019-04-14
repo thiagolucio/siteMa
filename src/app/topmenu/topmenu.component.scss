@@ -7,24 +7,12 @@
     position: fixed;
     top: 0;
 }
-// .topmenu {
-//     height: 60px;
-//     width: 100%;
-//     line-height: 60px;
-//     background-color: #FCFCFC;
-//     color: white;   
-// }
 
-// .logotop {
-//     height: 120px;
-//     width: auto;
-//     border-bottom-left-radius: 30px;
-//     border-bottom-right-radius: 30px;
-// }
-
+.navbar-brand {width: 200px;}
 .logo {
     height: 40px;
     width: auto;
+    margin-left: 100px;
 }
 
 .efeitoLogo {
@@ -36,4 +24,27 @@
     background-color: #FCFCFC;
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
+}
+
+.navbar-thin {
+    height: 25px;
+}
+
+.brand-top {
+    top: 20px;
+    position: absolute!important;
+    z-index: 99999!important;
+    margin: auto!important;
+    height: 0px;
+    width: 200px;
+}
+
+.container-topo {
+    height: 800px;
+}
+
+#carousel-top .carousel-inner{
+    border: 1px solid #333;
+    border-top-right-radius: 30px!important;
+    border-bottom-left-radius: 30px!important;
 }

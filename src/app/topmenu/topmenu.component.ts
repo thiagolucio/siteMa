@@ -7,9 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TopmenuComponent implements OnInit {
 
+
   constructor() { }
 
   ngOnInit() {
+    // $('.carousel').carousel({
+    //   interval: 2000
+    // });
   }
 
 }
