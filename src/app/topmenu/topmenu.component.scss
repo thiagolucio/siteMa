@@ -40,7 +40,7 @@
 }
 
 .container-topo {
-    height: 800px;
+    background: linear-gradient(to bottom, #2C2C2C 0%,#2C2C2C 85%,#2C2C2C 85%,white 15%,white 100%);
 }
 
 #carousel-top .carousel-inner{
@@ -48,3 +48,28 @@
     border-top-right-radius: 30px!important;
     border-bottom-left-radius: 30px!important;
 }
+
+.card-topo {
+   width: 18rem; 
+   height: 485.33px!important;
+   background-color: #2C2C2C;
+   border: none;
+}
+
+.card-topo >ul >li {
+    background-color: #2C2C2C;
+    border-bottom: 1px solid #FFF;
+    color: #FFF;
+    font-size: 14px;
+    padding: 16px; 
+}
+
+.list-group-item {
+   border: 1px solid #FFF;
+   
+}
+
+
+
+
+  
