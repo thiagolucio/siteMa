@@ -57,22 +57,21 @@
     <div class="container">
         <div class="row">
             <div class="col-md-8 col-xs-12">
-                <div id="carousel-top" class="carousel slide" data-ride="carousel">
+                <div id="carousel-top" class="carousel slide" data-ride="carousel" *ngFor="let slide of slides">
                     <ol class="carousel-indicators">
-                        <li data-target="#carousel-top" data-slide-to="0" class="active"></li>
                         <li data-target="#carousel-top" data-slide-to="1"></li>
                         <li data-target="#carousel-top" data-slide-to="2"></li>
+                        <li data-target="#carousel-top" data-slide-to="3"></li>
                     </ol>
                     <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img class="d-block w-100" src="https://images.pexels.com/photos/355296/pexels-photo-355296.jpeg?cs=srgb&dl=blur-branches-daylight-355296.jpg&fm=jpg" alt="Primeiro Slide">
+                        <div class="carousel-item">
+                            <img class="d-block w-100" [src]="slide.urlSlide" alt="Slide">
                             <div class="carousel-caption d-none d-md-block">
-                                    <h5>Titulo do Segundo Carousel</h5>
-                                    <p>Descrição do Segundo carousel. Este texto é colocado apenas para poder ver como fica uma descrição dentro do
-                                        Slide</p>
+                                    <h5>{{slide.tituloSlide}}</h5>
+                                    <p>{{slide.descricaoSlide}}</p>
                                 </div>
                         </div>
-                        <div class="carousel-item">
+<!--                         <div class="carousel-item">
                             <img class="d-block w-100"
                                 src="https://cdn.wonderfulengineering.com/wp-content/uploads/2016/01/nature-wallpapers-38.jpg" alt="Segundo Slide">
                                 <div class="carousel-caption d-none d-md-block">
@@ -88,7 +87,7 @@
                                     <p>Descrição do Segundo carousel. Este texto é colocado apenas para poder ver como fica uma descrição dentro do
                                         Slide</p>
                                 </div>
-                        </div>
+                        </div> -->
                     </div>
                     <a class="carousel-control-prev" href="#carousel-top" role="button" data-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -101,25 +100,33 @@
                 </div>
             </div>
 
-            
 
             <div class="col-md-4 col-xs-12">
-
                 <div class="card card-topo" style="height: 485.33px;">
-                  <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Cras justo odio</li>
-                    <li class="list-group-item">Dapibus ac facilisis in</li>
-                    <li class="list-group-item">Vestibulum at eros</li>
-                  </ul>
-                  <div class="card-footer" style="margin-bottom: 0px!important;">
-                    <a href="#" class="card-link">Link do rodapé -></a>
-                  </div>
+                    <div class="card-body">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                                <div class="data-list">18/11/2019</div>
+                                <a href="#"><small>Texto referente ao título em questao.</small></a>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="data-list">18/11/2019</div>
+                                <a href="#"><small>Texto referente ao título em questao.</small></a>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="data-list">18/11/2019</div>
+                                <a href="#"><small>Texto referente ao título em questao.</small></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <div class="corpo-text-footer">
+                            <i class="fa fa-arrow-right"></i> Footer
+                        </div>
+                        <div class="footer-tarja" style="color: #FFF;">Teste</div>
+                    </div>
                 </div>
-                
             </div>
-
-
-
         </div>
     </div>
 </div>

@@ -41,6 +41,10 @@
 
 .container-topo {
     background: linear-gradient(to bottom, #2C2C2C 0%,#2C2C2C 85%,#2C2C2C 85%,white 15%,white 100%);
+
+    .carousel-inner img {
+        height: 485.33px 
+    }
 }
 
 #carousel-top .carousel-inner{
@@ -53,21 +57,51 @@
    width: 18rem; 
    height: 485.33px!important;
    background-color: #2C2C2C;
-   border: none;
+   border-bottom-left-radius: 35px;
+
+   .list-group-item {
+        background-color: #2C2C2C;
+        border: none;        
+        color: #FFF;       
+    }
+
+    .data-list {
+        font-size: 12px;
+        border-bottom: 1px solid #FFF;
+    }
+
+    small {
+      font-size: 12px; 
+      color: #FFF;
+      font-weight: bold;
+    }
+
+    .card-footer {        
+        color: #FFF;
+        text-align: center;
+        line-height: 40px;
+        margin: 0;
+        padding: 0;        
+    }
+
+    .corpo-text-footer {
+        border-bottom: 50px solid #000; position: absolute;
+        border-left: 25px solid transparent; 
+        border-right: 25px solid transparent;  
+        height: 0; 
+        width: 150px;
+        margin: -24px 0 0 59px;
+    }
+
+    .footer-tarja {
+        background: black; 
+        width: 100%; 
+        height: 25px; 
+        border-bottom-left-radius: 35px!important;
+    }
+
 }
 
-.card-topo >ul >li {
-    background-color: #2C2C2C;
-    border-bottom: 1px solid #FFF;
-    color: #FFF;
-    font-size: 14px;
-    padding: 16px; 
-}
-
-.list-group-item {
-   border: 1px solid #FFF;
-   
-}
 
 
 
