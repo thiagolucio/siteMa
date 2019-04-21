@@ -1,0 +1,28 @@
+
+<div id="carousel-top" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#carousel-top" data-slide-to="1"></li>
+        <li data-target="#carousel-top" data-slide-to="2"></li>
+        <li data-target="#carousel-top" data-slide-to="3"></li>
+    </ol>                    
+    <div class="carousel-inner">    
+
+        <div class="carousel-item" *ngFor="let item of slide let i = index" [ngClass]="{'active' : i == 0}">
+            <img class="d-block w-100" src='{{item.urlSlide}}' alt="Slide">
+            <!-- <img class="d-block w-100" [src]="item.urlSlide" alt="Slide"> -->
+            <div class="carousel-caption d-none d-md-block">
+                <h5>{{item.tituloSlide}}</h5>
+                <p>{{item.descricaoSlide}}</p>
+            </div>
+        </div>        
+
+    </div>
+    <a class="carousel-control-prev" href="#carousel-top" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Anterior</span>
+    </a>
+    <a class="carousel-control-next" href="#carousel-top" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Próximo</span>
+    </a>
+</div>

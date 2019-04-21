@@ -1,0 +1,40 @@
+{
+  "slides":[
+    {
+        "idSlide": 1,
+        "tituloSlide": "Titulo Slide 1",
+        "descricaoSlide": "Descricao do Slide 1",
+        "urlSlide": "http://www.adelmoral.com.br/images/banner/p3.jpg"
+    },
+    {
+        "idSlide": 2,
+        "tituloSlide": "Titulo Slide 2",
+        "descricaoSlide": "Descricao do Slide 2",
+        "urlSlide": "http://www.adelmoral.com.br/images/banner/p5.jpg"
+    },
+    {
+        "idSlide": 3,
+        "tituloSlide": "Titulo Slide 3",
+        "descricaoSlide": "Descricao do Slide 3",
+        "urlSlide": "http://www.adelmoral.com.br/images/banner/p10.jpg"
+    }
+  ],
+  "blocoNoticia": [
+    {
+      "data": "11/02/2018",
+      "noticia": "Texto referente a primeira noticia"
+    },
+    {
+      "data": "18/8/2018",
+      "noticia": "Texto referente a segunda noticia"
+    },
+    {
+      "data": "09/02/2019",
+      "noticia": "Texto referente a terceira noticia"
+    },
+    {
+      "data": "11/03/2019",
+      "noticia": "Texto referente a quarta noticia"
+    }
+  ]
+}

@@ -3,9 +3,9 @@ import { Http, Response, JsonpModule } from "@angular/http";
 import { map } from 'rxjs/operators';
 import { Observable, Subscriber } from 'rxjs';
 import { preserveWhitespacesDefault } from '@angular/compiler';
-import { TopmenuService } from './topmenu.service';
-import { Topmenu } from './topmenu';
 
+
+export type Item = { idSlide: number, tituloSlide: string, descricaoSlide: string, urlSlide: string };
 
 @Component({
   selector: 'app-topmenu',
@@ -13,20 +13,20 @@ import { Topmenu } from './topmenu';
   styleUrls: ['./topmenu.component.scss'],
   preserveWhitespaces: true
 })
-
-
-
 export class TopmenuComponent implements OnInit {
 
-  //Criando rotina de repeticao via json para noticias do topo do site
-  noticia: Topmenu[];  
+ 	slides: Array<Item>;
 
-  constructor(private service: TopmenuService) {  }
+  constructor(private http: Http) { }
 
   ngOnInit() {
-
-    this.service.list().subscribe(dados => this.noticia = dados);  
-   
+      this.http
+        .get("/assets/data/db.json")
+        .pipe(map(data => data.json() as Array<Item>))
+        .subscribe(data => {
+        this.slides = data;
+        console.log(data);
+      });
   }
 
 }
