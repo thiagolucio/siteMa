@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Topmenu } from './topmenu';
 import { tap } from "rxjs/operators";
+import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root'
@@ -12,7 +13,7 @@ import { tap } from "rxjs/operators";
 export class TopmenuService { 
 
 
-  private readonly APINOTICIAS = 'http://localhost:3000/blocoNoticia';
+  private readonly APINOTICIAS = `${environment.API}/blocoNoticia`;
 
   constructor(private http: HttpClient) { }
 
