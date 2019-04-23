@@ -1,9 +1,7 @@
 
 <div id="carousel-top" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
-        <li data-target="#carousel-top" data-slide-to="1"></li>
-        <li data-target="#carousel-top" data-slide-to="2"></li>
-        <li data-target="#carousel-top" data-slide-to="3"></li>
+        <li *ngFor="let item of slide,let i = index" data-target="#carousel-top" class="{{ (i == 0) ? 'active' : '' }}" attr.data-slide-to="{{i}}"></li>        
     </ol>                    
     <div class="carousel-inner">    
 
