@@ -1,7 +1,117 @@
-#carousel-top .carousel-inner{
-    border: 1px solid #333;
-    border-top-right-radius: 30px!important;
-    border-bottom-left-radius: 30px!important;
+.carousel {
+    width: auto;
+    height: 650px;
+    position: relative;
 }
 
-.carousel-inner img {height: 485.33px }
+.carousel .gradient {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background: -moz-linear-gradient(left, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%);
+    background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%);
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4d000000', endColorstr='#4d000000', GradientType=1);
+}
+
+.carousel-indicators li span {
+    text-indent: 0;
+    position: absolute;
+    width: 100%;
+    height: auto;
+    padding: 5px 20px;
+    line-height: 20px;
+    bottom: 0;
+    border: none;
+    color: white;
+    font-weight: 500;
+    font-size: 16px;    
+    background-color: rgba(0, 0, 0, 0.7);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.carousel .carousel-inner img {
+    width: auto;
+    height: 650px;
+    object-fit: cover;
+}
+
+.carousel-thumbnails .carousel-indicators li {
+    height: 150px;
+    width: 270px;
+    max-width: 270px;
+    border: none;
+    margin-right: 0;
+    margin-left: 0;
+    position: relative;
+    cursor: pointer;
+}
+
+.carousel-thumbnails .carousel-indicators .active {
+    height: 150px;
+    width: 270px;
+    z-index: 9;
+    outline: 1px solid #000000;
+}
+
+.carousel-thumbnails ol li img {
+    height: 150px;
+    width: 100% !important;
+    object-fit: cover;
+}
+
+.carousel-caption {
+    top: 45%;
+    bottom: auto;
+    font-family: 'Montserrat', sans-serif;
+}
+.carousel-caption .lead {
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.carousel-caption .btn-primary,
+.carousel-caption .btn-primary:not(:disabled):not(.disabled):active {
+    color: #FFF;
+    border-radius: 0;
+    border: none;
+    font-size: 16px;
+    width: 200px;
+    font-weight: 600;
+    padding: 10px 20px;
+    background-color: #00904A;
+    border-color: #007bff;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;    
+}
+
+.carousel-caption .btn-primary span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.carousel-caption .btn-primary span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: -13px;
+    right: -20px;
+    transition: 0.5s;
+    font-size: 28px;
+}
+
+.carousel-caption .btn-primary:hover span {
+    padding-right: 25px;
+}
+
+.carousel-caption .btn-primary:hover span:after {
+    opacity: 1;
+    right: 0;
+}

@@ -1,19 +1,17 @@
 
-<div id="carousel-top" class="carousel slide" data-ride="carousel">
+<!-- <div id="carousel-top" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
         <li *ngFor="let item of slide,let i = index" data-target="#carousel-top" class="{{ (i == 0) ? 'active' : '' }}" attr.data-slide-to="{{i}}"></li>        
     </ol>                    
-    <div class="carousel-inner">    
-
+    <div class="carousel-inner">
         <div class="carousel-item" *ngFor="let item of slide let i = index" [ngClass]="{'active' : i == 0}">
-            <img class="d-block w-100" src='{{item.urlSlide}}' alt="Slide">
+            <img class="d-block w-100" src='{{item.urlSlide}}' alt="Slide"> -->
             <!-- <img class="d-block w-100" [src]="item.urlSlide" alt="Slide"> -->
-            <div class="carousel-caption d-none d-md-block">
+            <!-- <div class="carousel-caption d-none d-md-block">
                 <h5>{{item.tituloSlide}}</h5>
                 <p>{{item.descricaoSlide}}</p>
             </div>
-        </div>        
-
+        </div>
     </div>
     <a class="carousel-control-prev" href="#carousel-top" role="button" data-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -23,4 +21,28 @@
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="sr-only">Próximo</span>
     </a>
-</div>
+</div> -->
+
+    
+    
+    <div id="carousel-thumb" class="carousel slide carousel-fade carousel-thumbnails" data-ride="carousel">       
+        <div class="carousel-inner" role="listbox">
+            <div class="carousel-item" *ngFor="let item of slide let i = index" [ngClass]="{'active' : i == 0}">
+                <img class="d-block w-100" src='{{item.urlSlide}}' alt="First slide">
+                <!-- <img class="d-block w-100" [src]="item.urlSlide" alt="Slide"> -->
+                 <div class="gradient"></div>
+                  <div class="carousel-caption">
+                   <h3>{{item.tituloSlide}}</h3>
+                   <p class="lead">{{item.descricaoSlide}}</p>
+                   <a class="btn btn-primary" href="#"><span>Saiba mais</span></a>
+                  </div>
+            </div>
+        </div>
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-thumb" *ngFor="let item of slide let i = index" class="{{ (i == 0) ? 'active' : '' }}" attr.data-slide-to="{{i}}"> 
+                <img class="d-block w-100 img-fluid" src='{{item.urlSlide}}'/>                
+                <span>{{item.tituloSlide}}</span>
+            </li>
+        </ol>
+    </div>
+    
