@@ -32,10 +32,17 @@
 
 .brand-top {
     top: 20px;
-    position: absolute!important;
-    z-index: 99999!important;
-    margin: auto!important;
+    position: absolute;
+    z-index: 1111;
+    margin: auto;
     height: 0px;
     width: 200px;
 }
 
+.dropdown-item {
+    color: #FAFAFA;
+}
+.dropdown-item:hover {    
+    background: #008F49;
+    transition: 0.5s all;
+}

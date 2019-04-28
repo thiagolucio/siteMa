@@ -15,6 +15,9 @@
             <li class="nav-item d-none d-sm-block">
                 <a class="nav-link" href="#"><i class="fa fa-youtube"></i></a>
             </li>
+            <li class="nav-item d-none d-sm-block  mr-sm-2">
+                <a class="nav-link" href="#"><i class="fa fa-lock"></i> Área cliente</a>
+            </li>
         </ul>
     </nav>
 </div>
@@ -30,23 +33,28 @@
                 <img src="../../assets/img/logoBranca.png" class="logo" />
             </a>
             <ul class="navbar-nav ml-auto mt-2 mt-sm-0">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
+                    <a class="nav-link text-white" href="#">Quem Somos</a>
                 </li>
-                <li class="nav-item">
-                    <form class="form-inline">
-                        <div class="input-group">
-                            <input type="text" class="form-control" placeholder="Pesquisar..." aria-label="Pesquisar..."
-                                aria-describedby="button-addon2">
-                            <div class="input-group-append">
-                                <button class="btn btn-outline-secondary" type="button" id="button-addon2"
-                                    type="submit"><i class="fa fa-search"></i></button>
-                            </div>
+                <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropDownServicos" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Serviços
+                        </a>
+                        <div class="dropdown-menu animated fadeIn bg-dark" aria-labelledby="dropDownServicos">
+                          <a class="dropdown-item" href="#">Resíduo Industrial</a>
+                          <a class="dropdown-item" href="#">Recepção dos Resíduos</a>                          
+                          <a class="dropdown-item" href="#">Tratamento dos Resíduos</a>
+                          <a class="dropdown-item" href="#">Tratamento de Efluentes</a>
+                          <a class="dropdown-item" href="#">Blendagem de Resíduos/ Coprocessamento</a>
+                          <a class="dropdown-item" href="#">Incineração</a>
+                          <a class="dropdown-item" href="#">Disposição Final</a>
+                          <a class="dropdown-item" href="#">Cuidados Adicionais</a>
                         </div>
-                    </form>
+                      </li>
+                <li class="nav-item">                       
+                    <button type="button" id="btn4search" class="btn btn-dark btn-outline-success" style="border-radius: 50%" data-toggle="tooltip" data-placement="bottom" title="Pesquisar"  data-toggle="modal" data-target="#modalSearchComponent">
+                        <i class="fa fa-search"></i>
+                    </button>         
                 </li>
             </ul>
 

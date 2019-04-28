@@ -9,6 +9,8 @@ import { ContactComponent } from './contact/contact.component';
 import { HomeComponent } from './home/home.component';
 import { FooterComponent } from './footer/footer.component';
 import { SlidesComponent } from './slides/slides.component';
+import { SearchComponent } from './search/search.component';
+
 
 @NgModule({
   declarations: [
@@ -17,14 +19,18 @@ import { SlidesComponent } from './slides/slides.component';
     ContactComponent,
     HomeComponent,
     FooterComponent,
-    SlidesComponent
+    SlidesComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     HttpModule,
-    JsonpModule,
+    JsonpModule,     
+  ],
+  exports: [
+    SearchComponent,
   ],
   providers: [],
   bootstrap: [AppComponent]

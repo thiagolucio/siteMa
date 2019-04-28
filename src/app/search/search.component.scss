@@ -1,0 +1,36 @@
+#modalSearchComponent {
+    
+    @media (min-width: 576px) {
+    .modal-dialog {
+        max-width: 80%!important;
+        margin: auto!important;
+    }
+}
+    .closebtn {
+        position: absolute;
+        top: 5%;
+        right: 5%;
+        font-size: 60px;
+        cursor: pointer;
+        color: white;          
+        font-weight: bold;
+        background: transparent;
+        border: none;
+      }
+      
+    .closebtn:hover {
+       color: #ccc;
+      }
+
+    .modal-body-searchComponent {
+        background: transparent!important;
+    }
+
+    button:focus {
+        outline: none;
+        
+    }
+    
+}
+
+
