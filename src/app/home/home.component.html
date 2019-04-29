@@ -1,67 +1,24 @@
 <div class="container-fluid bg-dark">
-  <div class="container">
-      <div class="row">
-          <div class="col-md-3">
-            
-            
-              <div class="card" style="width:100%">
-                  <img class="card-img-top" src="https://www.meed.com/wp-content/uploads/2018/11/shutterstock_647070460-780x501.gif" alt="Card image" style="width:100%">
-                  <div class="card-body">
-                    <h4 class="card-title">John Doe</h4>
-                    <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
-                    <a href="#" class="btn btn-primary">See Profile</a>
-                  </div>
-                </div>
-      
-      
-      
+  <div class="container padding24">
+    <div class="row">
+      <div class="col-md-12 col-xs-12 padding-bottom30 text-center text-white">
+        <h3>NOSSOS SERVIÇOS</h3>
+        <p>
+          Nossos Serviços além de essenciais também oferecem grande benefício e toda infra-estrutura ambiental para sua empresa?
+        </p>
+      </div>
+      <div class="col-md-3" *ngFor="let item of servicos">
+        <div class="card" [style.backgroundColor]="item.corCardServico">
+          <img class="card-img-top" src='{{item.urlmgServico}}' alt="Card image" style="width:100%">
+          <div class="card-body">
+            <h4 class="card-title">{{item.tituloServico}}</h4>
+            <p class="card-text">{{item.textoServico}}</p>           
           </div>
-          <div class="col-md-3">
-            
-            
-              <div class="card" style="width:100%">
-                  <img class="card-img-top" src="https://media3.s-nbcnews.com/j/newscms/2018_46/2647811/181115-construction-workers-cs-1251p_827e53b5c70a06de97284ff70258b920.fit-560w.jpg" alt="Card image" style="width:100%">
-                  <div class="card-body">
-                    <h4 class="card-title">John Doe</h4>
-                    <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
-                    <a href="#" class="btn btn-primary">See Profile</a>
-                  </div>
-                </div>
-      
-      
-      
-          </div>
-          <div class="col-md-3">
-            
-            
-              <div class="card" style="width:100%">
-                  <img class="card-img-top" src="https://www.ukconstructionmedia.co.uk/wp-content/uploads/construction-activity-1.jpg" alt="Card image" style="width:100%">
-                  <div class="card-body">
-                    <h4 class="card-title">John Doe</h4>
-                    <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
-                    <a href="#" class="btn btn-primary">See Profile</a>
-                  </div>
-                </div>
-      
-      
-      
-          </div>
-          <div class="col-md-3">
-            
-            
-              <div class="card" style="width:100%">
-                  <img class="card-img-top" src="https://fashionjournal24.com/wp-content/uploads/2019/03/construction-tractors.jpg" alt="Card image" style="width:100%">
-                  <div class="card-body">
-                    <h4 class="card-title">John Doe</h4>
-                    <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
-                    <a href="#" class="btn btn-primary">See Profile</a>
-                  </div>
-                </div>
-      
-      
-      
+          <div class="card-footer btn-padrao">
+              <a class="btn btn-primary" href="#"><span>Saiba mais</span></a>
           </div>
         </div>
-      </div>      
+      </div>
+    </div>
   </div>
- 
+</div>

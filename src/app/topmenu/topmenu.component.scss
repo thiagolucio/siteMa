@@ -46,3 +46,7 @@
     background: #008F49;
     transition: 0.5s all;
 }
+
+a.text-dark:focus, a.text-dark:hover {
+    color: #008F49!important;
+}

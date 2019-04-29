@@ -1,67 +1,71 @@
-<div class="container">
-    <nav class="nav navbar navbar-expand-sm navbar-thin">
-        <div class="brand-top animated fadeIn">
-            <a class="navbar-brand" href="#">
-                <img src="../../assets/img/logotop.png" style="margin-left: 50px; width: 200px; height: auto;" />
-            </a>
-        </div>
-        <ul class="navbar-nav ml-auto mt-2 mt-sm-0">
-            <li class="nav-item active d-none d-sm-block">
-                <a class="nav-link" href="#"><i class="fa fa-twitter"></i></a>
-            </li>
-            <li class="nav-item d-none d-sm-block">
-                <a class="nav-link" href="#"><i class="fa fa-linkedin"></i></a>
-            </li>
-            <li class="nav-item d-none d-sm-block">
-                <a class="nav-link" href="#"><i class="fa fa-youtube"></i></a>
-            </li>
-            <li class="nav-item d-none d-sm-block  mr-sm-2">
-                <a class="nav-link" href="#"><i class="fa fa-lock"></i> Área cliente</a>
-            </li>
-        </ul>
-    </nav>
-</div>
-
-<nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top animated fadeInDown">
     <div class="container">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
-            aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-            <a class="navbar-brand" href="#">
-                <img src="../../assets/img/logoBranca.png" class="logo" />
-            </a>
+        <nav class="nav navbar navbar-expand-sm navbar-thin">
+            <div class="brand-top">
+                <a class="navbar-brand" href="#">
+                    <img src="../../assets/img/logotop.png" style="margin-left: 50px; width: 200px; height: auto;" />
+                </a>
+            </div>
             <ul class="navbar-nav ml-auto mt-2 mt-sm-0">
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="#">Quem Somos</a>
+                <li class="nav-item active d-none d-sm-block">
+                    <a class="nav-link text-dark" href="#"><i class="fa fa-twitter"></i></a>
                 </li>
-                <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="dropDownServicos" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          Serviços
-                        </a>
-                        <div class="dropdown-menu animated fadeIn bg-dark" aria-labelledby="dropDownServicos">
-                          <a class="dropdown-item" href="#">Resíduo Industrial</a>
-                          <a class="dropdown-item" href="#">Recepção dos Resíduos</a>                          
-                          <a class="dropdown-item" href="#">Tratamento dos Resíduos</a>
-                          <a class="dropdown-item" href="#">Tratamento de Efluentes</a>
-                          <a class="dropdown-item" href="#">Blendagem de Resíduos/ Coprocessamento</a>
-                          <a class="dropdown-item" href="#">Incineração</a>
-                          <a class="dropdown-item" href="#">Disposição Final</a>
-                          <a class="dropdown-item" href="#">Cuidados Adicionais</a>
-                        </div>
-                      </li>
-                <li class="nav-item">                       
-                    <button type="button" id="btn4search" class="btn btn-dark btn-outline-success" style="border-radius: 50%" data-toggle="tooltip" data-placement="bottom" title="Pesquisar"  data-toggle="modal" data-target="#modalSearchComponent">
-                        <i class="fa fa-search"></i>
-                    </button>         
+                <li class="nav-item d-none d-sm-block li-social">
+                    <a class="nav-link text-dark" href="#"><i class="fa fa-linkedin"></i></a>
+                </li>
+                <li class="nav-item d-none d-sm-block li-social">
+                    <a class="nav-link text-dark" href="#"><i class="fa fa-youtube"></i></a>
+                </li>
+                <li class="nav-item d-none d-sm-block  ml-5 li-social">
+                    <a class="nav-link text-dark" href="#"><i class="fa fa-lock"></i> Área cliente</a>
                 </li>
             </ul>
-
-        </div>
+        </nav>
     </div>
-</nav>
-<div class="container-fluid container-topo">    
-    <!-- SLIDES DO TOPO -->
-    <app-slides></app-slides>
-</div>
+
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top animated flipInX">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <a class="navbar-brand" href="#">
+                    <img src="../../assets/img/logoBranca.png" class="logo" />
+                </a>
+                <ul class="navbar-nav ml-auto mt-2 mt-sm-0">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Quem Somos</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropDownServicos" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Serviços
+                        </a>
+                        <div class="dropdown-menu animated fadeIn bg-dark" aria-labelledby="dropDownServicos">
+                            <a class="dropdown-item" href="#">Resíduo Industrial</a>
+                            <a class="dropdown-item" href="#">Recepção dos Resíduos</a>
+                            <a class="dropdown-item" href="#">Tratamento dos Resíduos</a>
+                            <a class="dropdown-item" href="#">Tratamento de Efluentes</a>
+                            <a class="dropdown-item" href="#">Blendagem de Resíduos/ Coprocessamento</a>
+                            <a class="dropdown-item" href="#">Incineração</a>
+                            <a class="dropdown-item" href="#">Disposição Final</a>
+                            <a class="dropdown-item" href="#">Cuidados Adicionais</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Contato</a>
+                    </li>
+                    <li class="nav-item ml-5">                       
+                        <button type="button" id="btn4search" class="btn btn-dark btn-outline-success" style="border-radius: 50%" data-toggle="tooltip" data-placement="bottom" title="Pesquisar"  data-toggle="modal" data-target="#modalSearchComponent">
+                            <i class="fa fa-search"></i>
+                        </button>         
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid container-topo">    
+        <!-- SLIDES DO TOPO -->
+        <app-slides></app-slides>
+    </div>

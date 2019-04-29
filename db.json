@@ -22,31 +22,58 @@
   "blocoNoticia": [
     {
       "idNoticia": 1,
-      "corNoticia": "#00AEC7",
-      "data": "11/02/2018",
+      "dataNoticia": "11/02/2018",
       "noticia": "Texto referente a primeira noticia",
       "urlmg": "https://www.meed.com/wp-content/uploads/2018/11/shutterstock_647070460-780x501.gif"
     },
     {
       "idNoticia": 2,
-      "corNoticia": "#E95F47",
-      "data": "18/8/2018",
+      "dataNoticia": "18/8/2018",
       "noticia": "Texto referente a segunda noticia",
       "urlmg": "https://media3.s-nbcnews.com/j/newscms/2018_46/2647811/181115-construction-workers-cs-1251p_827e53b5c70a06de97284ff70258b920.fit-560w.jpg"
     },
     {
       "idNoticia": 3,
-      "corNoticia": "#97BF0D",
-      "data": "09/02/2019",
+      "dataNoticia": "09/02/2019",
       "noticia": "Texto referente a terceira noticia",
       "urlmg": "https://www.ukconstructionmedia.co.uk/wp-content/uploads/construction-activity-1.jpg"
     },
     {
       "idNoticia": 4,
-      "corNoticia": "#804180",
-      "data": "11/03/2019",
+      "dataNoticia": "11/03/2019",
       "noticia": "Texto referente a quarta noticia",
       "urlmg": "https://fashionjournal24.com/wp-content/uploads/2019/03/construction-tractors.jpg"
+    }
+  ],
+  "servicos": [
+    {
+      "idServico": 1,
+      "corCardServico": "#00AEC7",
+      "tituloServico": "Nome do Serviço",
+      "textoServico": "Texto referente a primeira noticia",
+      "urlmgServico": "https://www.meed.com/wp-content/uploads/2018/11/shutterstock_647070460-780x501.gif"
+    },
+    {
+      "idServico": 2,
+      "corCardServico": "#E95F47",
+      "tituloServico": "Nome do Serviço",
+      "textoServico": "Texto referente a segunda noticia",
+      "urlmgServico": "https://www.meed.com/wp-content/uploads/2018/11/shutterstock_647070460-780x501.gif"
+    },
+    {
+      "idServico": 3,
+      "corCardServico": "#97BF0D",
+      "tituloServico": "Nome do Serviço",
+      "textoServico": "Texto referente a terceira noticia",
+      "urlmgServico": "https://www.meed.com/wp-content/uploads/2018/11/shutterstock_647070460-780x501.gif"
+    },
+
+    {
+      "idServico": 4,
+      "corCardServico": "#804180",
+      "tituloServico": "Nome do Serviço",
+      "textoServico": "Texto referente a quarta noticia",
+      "urlmgServico": "https://fashionjournal24.com/wp-content/uploads/2019/03/construction-tractors.jpg"
     }
   ]
 }

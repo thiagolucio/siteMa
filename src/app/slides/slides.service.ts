@@ -17,7 +17,6 @@ export class SlidesService {
   constructor(private http: HttpClient) { }
 
   list() {
-    return this.http.get<Slides[]>(this.APISLIDE)    
-    .pipe (tap(console.log));
+    return this.http.get<Slides[]>(this.APISLIDE).pipe (tap(console.log));
   }
 }
