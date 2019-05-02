@@ -1,0 +1,9 @@
+<div class="list-group">
+    <a href="#" class="list-group-item list-group-item-action" *ngFor="let item of noticias let i = index" [ngClass]="{'active' : i == 0}">
+      <div class="d-flex w-100 justify-content-between">
+        <h5 class="mb-1">{{item.tituloNoticia}}</h5>
+        <small class="text-dark">{{item.dataNoticia}}</small>
+      </div>
+      <p class="mb-1">{{item.noticia}}</p>
+    </a>
+  </div>

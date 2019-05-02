@@ -1,22 +1,20 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { tap } from "rxjs/operators";
-import {Home} from './home';
+import {Videos} from './videos';
 import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
+export class VideosService {
 
-
-export class HomeService {
-
-  private readonly APIHOME = `${environment.API}/home`;
+  private readonly APIVIDEOS = `${environment.API}/videos`;
 
   constructor(private http: HttpClient) { }
 
   list() {
-    return this.http.get<Home[]>(this.APIHOME)
+    return this.http.get<Videos[]>(this.APIVIDEOS)
     .pipe (tap(console.log));
   }
 }
