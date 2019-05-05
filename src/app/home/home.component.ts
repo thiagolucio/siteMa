@@ -18,16 +18,15 @@ declare var $;
 
 export class HomeComponent implements OnInit {
 
-  //Criando rotina de repeticao via json para noticias do topo do site
-  homeDados: Home[];
+  // homeDados: Home[];
+  homeDados$: Observable<Home[]>;
 
- constructor(private service: HomeService) {   
-
- }
+ constructor(private service: HomeService) { }
 
   ngOnInit() {    
-    
-    this.service.list().subscribe(dados => this.homeDados = dados);
+        
+    // this.service.list().subscribe(dados => this.homeDados = dados);
+    this.homeDados$ = this.service.list();
        
   }
 

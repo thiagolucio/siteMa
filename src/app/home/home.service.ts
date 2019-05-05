@@ -19,4 +19,5 @@ export class HomeService {
     return this.http.get<Home[]>(this.APIHOME)
     .pipe (tap(console.log));
   }
+  
 }

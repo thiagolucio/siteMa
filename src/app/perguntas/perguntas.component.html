@@ -1,0 +1,37 @@
+<div class="container">
+  <div class="row">
+      <div class="col-md-12 col-xs-12 padding-bottom30 text-center">
+          <h3>PERGUNTAS FREQUENTES</h3>
+          <p>Perguntas mais comuns enviadas por nossos clientes</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12 col-xs-12">
+    <!-- <div class="accordion" id="accordionPerguntas" *ngFor="let item of perguntas$ | async let i = index"> -->
+    <div class="accordion" id="accordionPerguntas">
+      <div class="card"  *ngFor="let item of perguntas$ | async let i = index">
+        <div class="card-header" id="cabecalhoUm">
+          <h2 class="mb-0">
+            <button 
+              class="btn btn-link" 
+              type="button" 
+              data-toggle="collapse" 
+              data-target="#collapsePerguntas"
+              aria-expanded="true" 
+              aria-controls="collapsePerguntas"
+              (click) = "current = i">
+             {{item.pergunta}}
+            </button>
+          </h2>
+        </div>
+
+        <div id="collapsePerguntas" [class.collapse.show]="current != i" aria-labelledby="cabecalhoUm" data-parent="#accordionPerguntas">
+          <div class="card-body">
+            {{item.resposta}}
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+</div>

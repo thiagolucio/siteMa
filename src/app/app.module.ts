@@ -15,6 +15,7 @@ import { SearchComponent } from './search/search.component';
 import { NoticiasComponent } from './noticias/noticias.component';
 import { VideosComponent } from './videos/videos.component';
 import { ServicosComponent } from './servicos/servicos.component';
+import { PerguntasComponent } from './perguntas/perguntas.component';
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import { ServicosComponent } from './servicos/servicos.component';
     SearchComponent,
     NoticiasComponent,
     VideosComponent,
-    ServicosComponent      
+    ServicosComponent,
+    PerguntasComponent      
   ],
   imports: [
     BrowserModule,

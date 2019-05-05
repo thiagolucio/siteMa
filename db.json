@@ -22,13 +22,60 @@
   "home": [
     {
       "idConteudo": 1,
-      "tituloSessao": "Título da sessão 1",
-      "sloganSessao": "Slogan Sessão 1"
+      "tituloSessao": "POR DENTRO DAS NOVIDADES",
+      "sloganSessao": "Postando um novo vídeo ou uma nova notícia estamos sempre trazendo novidades para que você possa saber mais sobre nós."
     },
     {
       "idConteudo": 2,
       "tituloSessao": "Título da sessão 2",
       "sloganSessao": "Slogan Sessão 2"
+    }
+  ],
+  "perguntas": [
+    {
+      "idPergunta": 1,
+      "pergunta": "Quando iniciaram as atividades da CTRB?",
+      "resposta": "A operação da CTRB iniciou em janeiro de 1.999 com o recebimento, tratamento e disposição final de resíduos Classe II. No ano de 2.001 iniciou a operação com resíduos Classe I."
+    },
+    {
+      "idPergunta": 2,
+      "pergunta": "A Central de Tratamento de Resíduos de Blumenau – CTRB , é um empreendimento público ou privado?",
+      "resposta": "A CTRB é um empreendimento privado, de propriedade da Momento Engenharia Ambiental S.A."
+    },
+    {
+      "idPergunta": 3,
+      "pergunta": "Qual a vida útil do aterro?",
+      "resposta": "O tempo estimado para o Aterro Classe II contados a partir de 2.008 é de 20 anos e para o Aterro Classe I é de 13 anos. Essa é a vida útil na configuração atual."
+    },
+    {
+      "idPergunta": 4,
+      "pergunta": "O que é feito com o efluente líquido gerado no aterro?",
+      "resposta": "Este líquido, denominado chorume, é captado pelo sistema de drenagem e conduzido até os tanques de equalização, onde há a homogeneização dos mesmos e posterior bombeamento para tratamento na Estação de Tratamento de Efluentes - ETE."
+    },
+    {
+      "idPergunta": 5,
+      "pergunta": "Qual o tipo de tratamento dado ao efluente?",
+      "resposta": "O efluente recebe tratamentos Biológico e Físico-Químico."
+    },
+    {
+      "idPergunta": 6,
+      "pergunta": "Qual o horário de atendimento da CTRB.",
+      "resposta": "De segunda a sexta : 07:00h às 19:00h aos Sábados 07:00h às 11:00h e Domingos e Feriados estamos fechados."
+    },
+    {
+      "idPergunta": 7,
+      "pergunta": "A CTRB recebe resíduo domiciliar de algum Município?",
+      "resposta": "Não. A CTRB recebe exclusivamente resíduos Industriais"
+    },
+    {
+      "idPergunta": 8,
+      "pergunta": "Qual a diferença entre Lixão e Aterro Sanitário?",
+      "resposta": "O lixão é local inadequado para disposição final de resíduos, pois não possui qualquer controle ambiental. O Aterro Industrial e Sanitário é um local ecologicamente correto para disposição final de resíduos Industriais, pois dispõe de todos os controles ambientais necessários, como impermeabilização, tratamento de efluentes, tratamento físico e químico do resíduo e monitoramento das águas do entorno."
+    },
+    {
+      "idPergunta": 9,
+      "pergunta": "Quais as coordenadas geográficas da CTRB?",
+      "resposta": "As coordenadas tendo como ponto de referência Recepção de Resíduos são de Latitude de 26º 40' 45.3575\" e Longitude de 49º 01' 58.9046\" W."
     }
   ],
   "noticias": [
