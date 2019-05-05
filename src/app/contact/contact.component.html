@@ -1,3 +1,60 @@
-<p>
-  contact works!
-</p>
+<div class="container pt-5 pb-5">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="google-map">
+              <iframe 
+              frameborder="0" 
+              style="border:0" 
+              src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAEIpgj38KyLFELm2bK9Y7krBkz1K-cMq8&amp;q=place_id:ChIJn6wOs6lZwokRLKy1iqRcoKw" 
+              allowfullscreen="">
+            </iframe>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <h3 class="pb-3 align-left display-4">Fale Conosco</h3>
+            <div>
+                <div class="icon-block pb-3 align-left">        
+                    <h4 class="icon-block__title align-left mbr-fonts-style display-5">
+                        <i class="far fa-envelope"></i>  Entre em contato conosco. 
+                    </h4>
+                </div>
+                <div class="icon-contacts pb-3">
+                    <h5 class="align-left mbr-fonts-style display-7">
+                        Nossos dados de contato são:
+                    </h5>
+                    <p class="mbr-text align-left mbr-fonts-style display-7">
+                        <i class="fas fa-phone mr-2"></i>  Telefone: +55 (48) 9999 9999 <br>
+                        <i class="fas fa-envelope mr-2"></i> Email: contato@momentoambiental.com.br
+                    </p>
+                </div>
+            </div>
+            <div data-form-type="form">               
+                <form action="#" method="POST" class="mbr-form form-with-styler" data-form-title="Formulario de contato">
+                  <input type="hidden" name="email" data-form-email="true" value="">
+                    <div class="row">
+                        <div hidden="hidden" data-form-alert="" class="alert alert-success col-12">Obrigado por entrar em contato!</div>
+                        <div hidden="hidden" data-form-alert-danger="" class="alert alert-danger col-12">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 form-group" data-for="nomeInput">
+                            <input type="text" name="nomeInput" placeholder="Thiago Lucio Bittencourt" data-form-field="Nome" required="required" class="form-control input display-7" id="nomeInput">
+                        </div>
+                        <div class="col-md-6 form-group" data-for="telefoneInput">
+                            <input type="text" name="telefoneInput" placeholder="Telefone de contato" data-form-field="telefoneInput" required="required" class="form-control input display-7" id="telefoneInput">
+                        </div>
+                        <div data-for="emailInput" class="col-md-12 form-group">
+                            <input type="text" name="emailInput" placeholder="Email" data-form-field="Email de contato" class="form-control input display-7" required="required" id="emailInput">
+                        </div>
+                        <div data-for="mensagemInput" class="col-md-12 form-group">
+                            <textarea name="mensagemInput" placeholder="Digite sua mensagem" data-form-field="Mensagem" class="form-control input display-7" id="mensagemInput"></textarea>
+                        </div>
+                        <div class="col-md-12 input-group-btn  mt-2 align-center">
+                            <button type="submit" class="btn btn-dark btn-lg display-4"><i class="fas fa-paper-plane"></i> Enviar</button>
+                        </div>
+                    </div>
+                </form><!---Formbuilder Form--->
+            </div>
+        </div>
+    </div>
+</div>

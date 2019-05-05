@@ -1,0 +1,29 @@
+.social-list {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    -webkit-justify-content: flex-end;
+  }
+  .social-list .soc-item {
+    margin: 0 .5rem;
+  }
+
+  .social-list a {
+    margin: 0;
+    opacity: .5;
+    -webkit-transition: .2s linear;
+    transition: .2s linear;
+  }
+  .social-list a:hover {
+    opacity: 1;
+  }
+
+  @media (max-width: 767px) {
+    .social-list {
+      justify-content: center;
+      -webkit-justify-content: center;
+    }
+  }
