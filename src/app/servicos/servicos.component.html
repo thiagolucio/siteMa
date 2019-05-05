@@ -9,8 +9,8 @@
     <div class="col-md-3" *ngFor="let item of servicos">
       <div class="card" [style.backgroundColor]="item.corCardServico">
         <img class="card-img-top" src='{{item.urlmgServico}}' alt="Card image" style="width:100%">
-        <div class="card-body">
-          <h5 class="card-title">{{item.tituloServico}}</h5>
+        <div class="card-body text-white">
+          <h5 class="card-title text-white">{{item.tituloServico}}</h5>
           <p class="card-text">{{item.textoServico}}</p>
         </div>
         <div class="card-footer btn-padrao">

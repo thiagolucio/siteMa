@@ -16,16 +16,15 @@ declare var $;
 })
 export class NoticiasComponent implements OnInit {
 
-  noticias: Noticias[];  
+  // noticias: Noticias[];  
+  noticias$: Observable<Noticias[]>;
 
-
- constructor(private service: NoticiasService) {   
-
- }
+ constructor(private service: NoticiasService) { }
 
   ngOnInit() {    
     
-    this.service.list().subscribe(dados => this.noticias = dados);      
+    // this.service.list().subscribe(dados => this.noticias = dados);
+    this.noticias$ = this.service.list();
    
   }
 }

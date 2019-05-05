@@ -19,6 +19,18 @@
         "urlSlide": "http://www.adelmoral.com.br/images/banner/p10.jpg"
     }
   ],
+  "home": [
+    {
+      "idConteudo": 1,
+      "tituloSessao": "Título da sessão 1",
+      "sloganSessao": "Slogan Sessão 1"
+    },
+    {
+      "idConteudo": 2,
+      "tituloSessao": "Título da sessão 2",
+      "sloganSessao": "Slogan Sessão 2"
+    }
+  ],
   "noticias": [
     {
       "idNoticia": 1,

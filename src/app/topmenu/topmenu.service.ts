@@ -10,16 +10,6 @@ import { environment } from 'src/environments/environment';
 
 
 
-export class TopmenuService { 
-
-
-  private readonly APINOTICIAS = `${environment.API}/blocoNoticia`;
-
-  constructor(private http: HttpClient) { }
-
-  list() {
-    return this.http.get<Topmenu[]>(this.APINOTICIAS)    
-    .pipe (tap(console.log));
-  }
- 
+export class TopmenuService {
+  constructor() { } 
 }

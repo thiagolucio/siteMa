@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { tap } from "rxjs/operators";
+import { tap, delay } from "rxjs/operators";
 import {Noticias} from './noticias';
 import { environment } from 'src/environments/environment';
 
@@ -16,6 +16,7 @@ export class NoticiasService {
 
   list() {
     return this.http.get<Noticias[]>(this.APINOTICIAS)     
-    .pipe (tap(console.log));
+    .pipe (      
+      tap(console.log));
   }
 }

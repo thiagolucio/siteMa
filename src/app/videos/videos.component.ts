@@ -1,10 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Http, Response, JsonpModule } from "@angular/http";
-import { map } from 'rxjs/operators';
-import { Observable, Subscriber } from 'rxjs';
+import { Observable } from 'rxjs';
 import { VideosService } from './videos.service';
 import {Videos} from './videos';
-import { stringify } from 'querystring';
 
 declare var $;
 
@@ -15,16 +13,15 @@ declare var $;
 })
 export class VideosComponent implements OnInit {
 
-  videos: Videos[]; 
+  // videos: Videos[]; 
+  videos$: Observable<Videos[]>;
 
-
- constructor(private service: VideosService) {   
-
- }
+ constructor(private service: VideosService) { }
 
   ngOnInit() {    
     
-    this.service.list().subscribe(dados => this.videos = dados);    
+    // this.service.list().subscribe(dados => this.videos = dados);    
+    this.videos$ = this.service.list();
    
   }
 
