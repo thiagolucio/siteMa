@@ -4,7 +4,6 @@ import { HttpClientModule } from '@angular/common/http';
 import { HttpModule, JsonpModule } from '@angular/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NgxTweetModule } from "ngx-tweet";
 
 import { TopmenuComponent } from './topmenu/topmenu.component';
 import { ContactComponent } from './contact/contact.component';
@@ -16,6 +15,8 @@ import { NoticiasComponent } from './noticias/noticias.component';
 import { VideosComponent } from './videos/videos.component';
 import { ServicosComponent } from './servicos/servicos.component';
 import { PerguntasComponent } from './perguntas/perguntas.component';
+import { QuemSomosComponent } from './quem-somos/quem-somos.component'
+import { QuemSomosContentComponent } from './quem-somos/quem-somos-content/quem-somos-content.component'
 
 
 @NgModule({
@@ -30,7 +31,9 @@ import { PerguntasComponent } from './perguntas/perguntas.component';
     NoticiasComponent,
     VideosComponent,
     ServicosComponent,
-    PerguntasComponent      
+    PerguntasComponent,
+    QuemSomosComponent,
+    QuemSomosContentComponent      
   ],
   imports: [
     BrowserModule,
@@ -38,11 +41,9 @@ import { PerguntasComponent } from './perguntas/perguntas.component';
     HttpClientModule,
     HttpModule,
     JsonpModule,
-    NgxTweetModule,     
   ],
   exports: [
     SearchComponent,
-    NgxTweetModule,  
   ],
   providers: [],
   bootstrap: [AppComponent]
