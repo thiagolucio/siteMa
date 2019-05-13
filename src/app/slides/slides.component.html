@@ -27,7 +27,7 @@
     
     <div id="carousel-thumb" class="carousel slide carousel-fade carousel-thumbnails" data-ride="carousel">       
         <div class="carousel-inner" role="listbox">
-            <div class="carousel-item" *ngFor="let item of slide let i = index" [ngClass]="{'active' : i == 0}">
+            <div class="carousel-item" *ngFor="let item of slide$ | async let i = index" [ngClass]="{'active' : i == 0}">
                 <img class="d-block w-100" src='{{item.urlSlide}}' alt="First slide">
                 <!-- <img class="d-block w-100" [src]="item.urlSlide" alt="Slide"> -->
                  <div class="gradient"></div>
@@ -39,7 +39,7 @@
             </div>
         </div>
         <ol class="carousel-indicators">
-            <li data-target="#carousel-thumb" *ngFor="let item of slide let i = index" class="{{ (i == 0) ? 'active' : '' }}" attr.data-slide-to="{{i}}"> 
+            <li data-target="#carousel-thumb" *ngFor="let item of slide$ | async let i = index" class="{{ (i == 0) ? 'active' : '' }}" attr.data-slide-to="{{i}}"> 
                 <img class="d-block w-100 img-fluid" src='{{item.urlSlide}}'/>                
                 <span>{{item.tituloSlide}}</span>
             </li>

@@ -8,7 +8,5 @@ declare var $;
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'siteMa';
-
-  
+  title = 'siteMa';  
 }

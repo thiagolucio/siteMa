@@ -139,6 +139,32 @@
       "urlmgServico": "https://fashionjournal24.com/wp-content/uploads/2019/03/construction-tractors.jpg"
     }
   ],
+  "aterros": [
+    {
+      "idAterro": 1,
+      "nomeAterro": "CGR São Paulo",
+      "textoAterro": "Texto referente ao Aterro CGR São Paulo",
+      "urlmgAterro": "https://fashionjournal24.com/wp-content/uploads/2019/03/construction-tractors.jpg"
+    },
+    {
+      "idAterro": 2,
+      "nomeAterro": "CGR Iperó",
+      "textoAterro": "Texto referente ao Aterro CGR Iperó",
+      "urlmgAterro": "https://fashionjournal24.com/wp-content/uploads/2019/03/construction-tractors.jpg"
+    },
+    {
+      "idAterro": 3,
+      "nomeAterro": "CGR Biguaçu",
+      "textoAterro": "Texto referente ao Aterro CGR Biguaçu",
+      "urlmgAterro": "https://fashionjournal24.com/wp-content/uploads/2019/03/construction-tractors.jpg"
+    },
+    {
+      "idAterro": 4,
+      "nomeAterro": "CGR Blumenau",
+      "textoAterro": "Texto referente ao Aterro CGR Blumenau",
+      "urlmgAterro": "https://fashionjournal24.com/wp-content/uploads/2019/03/construction-tractors.jpg"
+    }
+  ],
   "videos": [
     {
       "idVideo": 1,

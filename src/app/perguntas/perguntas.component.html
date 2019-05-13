@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container padding24">
   <div class="row">
       <div class="col-md-12 col-xs-12 padding-bottom30 text-center">
           <h3>PERGUNTAS FREQUENTES</h3>
@@ -6,9 +6,26 @@
     </div>
   </div>
   <div class="row">
-    <div class="col-md-12 col-xs-12">
+
+      <div class="py-5">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <ul class="list-group list-group-flush" *ngFor="let item of perguntas$ | async">
+                    <li class="list-group-item">
+                     <div class="font12">{{item.idPergunta}}) {{item.pergunta}}</div> 
+                       <span style="font-size: 12px; font-weight: normal;">{{item.resposta}}</span>
+                    </li>                      
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+  <!-- ABAIXO A SOLUCAO DE ACORDEON IMPLEMENTADA -->
+    <!-- <div class="col-md-12 col-xs-12"> -->
     <!-- <div class="accordion" id="accordionPerguntas" *ngFor="let item of perguntas$ | async let i = index"> -->
-    <div class="accordion" id="accordionPerguntas">
+    <!-- <div class="accordion" id="accordionPerguntas">
       <div class="card"  *ngFor="let item of perguntas$ | async let i = index">
         <div class="card-header" id="cabecalhoUm">
           <h2 class="mb-0">
@@ -32,6 +49,6 @@
         </div>
       </div>
     </div>
-    </div>
+    </div> -->
   </div>
 </div>

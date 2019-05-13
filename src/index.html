@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
   <meta charset="utf-8">
@@ -10,13 +10,42 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
-
 <body>
   <app-root></app-root>
-<div id="scrollToTop" class="scrollToTop mbr-arrow-up"><a style="text-align: center;">
-  <i class="mbr-arrow-up-icon mbr-arrow-up-icon-cm cm-icon cm-icon-smallarrow-up"></i></a>
-</div>
-<input name="animation" type="hidden">
+
+
+  <!-- botao voltar ao topo -->
+  <div id="scrollToTop" class="scrollToTop mbr-arrow-up">
+    <a style="text-align: center;">
+      <i class="mbr-arrow-up-icon-cm cm-icon cm-icon-smallarrow-up"></i></a>
+  </div>
+  <input name="animation" type="hidden">
+
+
 </body>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<script>
+      // Voltar ao topo
+      $(document).ready(function() {
+        if ($('.mbr-arrow-up').length) {
+            var $scroller = $('#scrollToTop'),
+                $main = $('body,html'),
+                $window = $(window);
+            $scroller.css('display', 'none');
+            $window.scroll(function() {
+                if ($(this).scrollTop() > 0) {
+                    $scroller.fadeIn();
+                } else {
+                    $scroller.fadeOut();
+                }
+            });
+            $scroller.click(function() {
+                $main.animate({
+                    scrollTop: 0
+                }, 400);
+                return false;
+            });
+        }
+    });
+</script>
 </html>

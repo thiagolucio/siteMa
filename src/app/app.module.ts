@@ -16,7 +16,9 @@ import { VideosComponent } from './videos/videos.component';
 import { ServicosComponent } from './servicos/servicos.component';
 import { PerguntasComponent } from './perguntas/perguntas.component';
 import { QuemSomosComponent } from './quem-somos/quem-somos.component'
-import { QuemSomosContentComponent } from './quem-somos/quem-somos-content/quem-somos-content.component'
+import { QuemSomosContentComponent } from './quem-somos/quem-somos-content/quem-somos-content.component';
+import { AterrosSanitariosComponent } from './aterros-sanitarios/aterros-sanitarios.component';
+import { AterrosSanitariosContentComponent } from './aterros-sanitarios/aterros-sanitarios-content/aterros-sanitarios-content.component'
 
 
 @NgModule({
@@ -33,7 +35,9 @@ import { QuemSomosContentComponent } from './quem-somos/quem-somos-content/quem-
     ServicosComponent,
     PerguntasComponent,
     QuemSomosComponent,
-    QuemSomosContentComponent      
+    QuemSomosContentComponent,
+    AterrosSanitariosComponent,
+    AterrosSanitariosContentComponent      
   ],
   imports: [
     BrowserModule,

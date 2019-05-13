@@ -1,0 +1,23 @@
+<div class="pt-5 pb-3 text-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h1 class="mb-3">Aterros Sanitários</h1>
+        <p class="lead"><b>Conheça nossos Centros de Aterros Sanitários</b></p>
+      </div>
+    </div>
+    <div class="row">
+      <div *ngFor="let item of aterros$ | async" class="col-md-3 col-6 p-4">
+        <img class="img-fluid d-block" src="{{item.urlmgAterro}}" width="1500">
+        <h4 class="mt-3 mb-0"> <b>{{item.nomeAterro}}</b></h4>  
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 col-xs-12">
+          <div class="btn-padrao">
+              <a class="btn btn-primary" routerLink="/aterrossanitarioscontent"><span>Saiba mais</span></a>
+            </div>
+      </div>
+    </div>
+  </div>
+</div>

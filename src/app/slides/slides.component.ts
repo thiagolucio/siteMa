@@ -12,13 +12,14 @@ import { Slides } from './slides';
 })
 export class SlidesComponent implements OnInit {
 
-  slide: Slides[];  
+  slide$: Observable<Slides[]>;  
 
   constructor(private service: SlidesService) {  }
 
   ngOnInit() {
 
-    this.service.list().subscribe(dados => this.slide = dados);  
+    // this.service.list().subscribe(dados => this.slide = dados);  
+    this.slide$ = this.service.list();
    
   }
 }

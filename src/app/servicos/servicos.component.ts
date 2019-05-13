@@ -18,16 +18,14 @@ declare var $;
 
 export class ServicosComponent implements OnInit {
 
-  servicos: Servicos[]; 
+  servicos$: Observable<Servicos[]>;
 
- constructor(private service: ServicosService) {   
-
- }
+ constructor(private service: ServicosService) { }
 
   ngOnInit() {    
     
-    this.service.list().subscribe(dados => this.servicos = dados);         
-   
+    // this.service.list().subscribe(dados => this.servicos = dados);         
+    this.servicos$ = this.service.list();
   }
 
 }
