@@ -19,7 +19,8 @@ import { QuemSomosComponent } from './quem-somos/quem-somos.component'
 import { QuemSomosContentComponent } from './quem-somos/quem-somos-content/quem-somos-content.component';
 import { AterrosSanitariosComponent } from './aterros-sanitarios/aterros-sanitarios.component';
 import { AterrosSanitariosContentComponent } from './aterros-sanitarios/aterros-sanitarios-content/aterros-sanitarios-content.component';
-import { VariedadesComponent } from './variedades/variedades.component'
+import { VariedadesComponent } from './variedades/variedades.component';
+import { ContentServicosComponent } from './servicos/content-servicos/content-servicos.component';
 
 
 @NgModule({
@@ -39,7 +40,8 @@ import { VariedadesComponent } from './variedades/variedades.component'
     QuemSomosContentComponent,
     AterrosSanitariosComponent,
     AterrosSanitariosContentComponent,
-    VariedadesComponent      
+    VariedadesComponent,
+    ContentServicosComponent   
   ],
   imports: [
     BrowserModule,

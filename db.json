@@ -112,31 +112,31 @@
     {
       "idServico": 1,
       "corCardServico": "#00AEC7",
-      "tituloServico": "Nome do Serviço",
-      "textoServico": "Texto referente a primeira noticia",
-      "urlmgServico": "https://www.meed.com/wp-content/uploads/2018/11/shutterstock_647070460-780x501.gif"
+      "tituloServico": "Resíduo Industrial",
+      "textoServico": "Saiba nossas soluções para Resíduos Industriais",
+      "urlmgServico": "/assets/img/latinhas-recicladas.jpg"
     },
     {
       "idServico": 2,
       "corCardServico": "#E95F47",
-      "tituloServico": "Nome do Serviço",
-      "textoServico": "Texto referente a segunda noticia",
-      "urlmgServico": "https://fashionjournal24.com/wp-content/uploads/2019/03/construction-tractors.jpg"
+      "tituloServico": "Recepção dos Resíduos",
+      "textoServico": "Saiba como recebemos nossos Resíduos",
+      "urlmgServico": "/assets/img/balanca.jpg"
     },
     {
       "idServico": 3,
       "corCardServico": "#97BF0D",
-      "tituloServico": "Nome do Serviço",
-      "textoServico": "Texto referente a terceira noticia",
-      "urlmgServico": "https://www.meed.com/wp-content/uploads/2018/11/shutterstock_647070460-780x501.gif"
+      "tituloServico": "Tratamento dos Resíduos",
+      "textoServico": "Saiba mais sobre nosso Tratamento de Resíduos",
+      "urlmgServico": "/assets/img/img_solidificacao_01.jpg"
     },
 
     {
       "idServico": 4,
       "corCardServico": "#804180",
-      "tituloServico": "Nome do Serviço",
-      "textoServico": "Texto referente a quarta noticia",
-      "urlmgServico": "https://fashionjournal24.com/wp-content/uploads/2019/03/construction-tractors.jpg"
+      "tituloServico": "Tratamento de Efluentes",
+      "textoServico": "Saiba mais sobre nosso tratamento de efluentes",
+      "urlmgServico": "/assets/img/ete-3.jpg"
     }
   ],
   "aterros": [
