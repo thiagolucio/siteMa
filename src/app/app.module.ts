@@ -20,7 +20,14 @@ import { QuemSomosContentComponent } from './quem-somos/quem-somos-content/quem-
 import { AterrosSanitariosComponent } from './aterros-sanitarios/aterros-sanitarios.component';
 import { AterrosSanitariosContentComponent } from './aterros-sanitarios/aterros-sanitarios-content/aterros-sanitarios-content.component';
 import { VariedadesComponent } from './variedades/variedades.component';
-import { ContentServicosComponent } from './servicos/content-servicos/content-servicos.component';
+import { ResiduoIndustrialComponent } from './servicos/residuo-industrial/residuo-industrial.component';
+import { RecepcaoResiduosComponent } from './servicos/recepcao-residuos/recepcao-residuos.component';
+import { TratamentoResiduosComponent } from './servicos/tratamento-residuos/tratamento-residuos.component';
+import { TratamentoEfluentesComponent } from './servicos/tratamento-efluentes/tratamento-efluentes.component';
+import { BlendagemResiduosComponent } from './servicos/blendagem-residuos/blendagem-residuos.component';
+import { IncineracaoComponent } from './servicos/incineracao/incineracao.component';
+import { DisposicaoFinalComponent } from './servicos/disposicao-final/disposicao-final.component';
+import { CuidadosAdicionaisComponent } from './servicos/cuidados-adicionais/cuidados-adicionais.component';
 
 
 @NgModule({
@@ -41,7 +48,14 @@ import { ContentServicosComponent } from './servicos/content-servicos/content-se
     AterrosSanitariosComponent,
     AterrosSanitariosContentComponent,
     VariedadesComponent,
-    ContentServicosComponent   
+    ResiduoIndustrialComponent,
+    RecepcaoResiduosComponent,
+    TratamentoResiduosComponent,
+    TratamentoEfluentesComponent,
+    BlendagemResiduosComponent,
+    IncineracaoComponent,
+    DisposicaoFinalComponent,
+    CuidadosAdicionaisComponent
   ],
   imports: [
     BrowserModule,

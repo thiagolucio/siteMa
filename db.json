@@ -114,21 +114,24 @@
       "corCardServico": "#00AEC7",
       "tituloServico": "Resíduo Industrial",
       "textoServico": "Saiba nossas soluções para Resíduos Industriais",
-      "urlmgServico": "/assets/img/latinhas-recicladas.jpg"
+      "urlmgServico": "/assets/img/latinhas-recicladas.jpg",
+      "urlApiServico": "residuoIndustrial"
     },
     {
       "idServico": 2,
       "corCardServico": "#E95F47",
       "tituloServico": "Recepção dos Resíduos",
       "textoServico": "Saiba como recebemos nossos Resíduos",
-      "urlmgServico": "/assets/img/balanca.jpg"
+      "urlmgServico": "/assets/img/balanca.jpg",
+      "urlApiServico": "recepcaoResiduos"
     },
     {
       "idServico": 3,
       "corCardServico": "#97BF0D",
       "tituloServico": "Tratamento dos Resíduos",
       "textoServico": "Saiba mais sobre nosso Tratamento de Resíduos",
-      "urlmgServico": "/assets/img/img_solidificacao_01.jpg"
+      "urlmgServico": "/assets/img/img_solidificacao_01.jpg",
+      "urlApiServico": "tratamentoResiuduos"
     },
 
     {
@@ -136,7 +139,8 @@
       "corCardServico": "#804180",
       "tituloServico": "Tratamento de Efluentes",
       "textoServico": "Saiba mais sobre nosso tratamento de efluentes",
-      "urlmgServico": "/assets/img/ete-3.jpg"
+      "urlmgServico": "/assets/img/ete-3.jpg",
+      "urlApiServico": "tratamentoEfluentes"
     }
   ],
   "aterros": [
