@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild, ElementRef, asNativeElements, AfterViewInit } from '@angular/core'; 
 
 declare var $;
 
@@ -8,5 +8,10 @@ declare var $;
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'siteMa';  
+
+  title = 'siteMa';    
+  
+  
 }
+
+

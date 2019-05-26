@@ -28,6 +28,9 @@ import { BlendagemResiduosComponent } from './servicos/blendagem-residuos/blenda
 import { IncineracaoComponent } from './servicos/incineracao/incineracao.component';
 import { DisposicaoFinalComponent } from './servicos/disposicao-final/disposicao-final.component';
 import { CuidadosAdicionaisComponent } from './servicos/cuidados-adicionais/cuidados-adicionais.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ResponsabilidadeLegalComponent } from './responsabilidade-legal/responsabilidade-legal.component';
+import { ModalSistemaComponent } from './modal-sistema/modal-sistema.component';
 
 
 @NgModule({
@@ -55,7 +58,9 @@ import { CuidadosAdicionaisComponent } from './servicos/cuidados-adicionais/cuid
     BlendagemResiduosComponent,
     IncineracaoComponent,
     DisposicaoFinalComponent,
-    CuidadosAdicionaisComponent
+    CuidadosAdicionaisComponent,
+    ResponsabilidadeLegalComponent,
+    ModalSistemaComponent
   ],
   imports: [
     BrowserModule,
@@ -63,9 +68,11 @@ import { CuidadosAdicionaisComponent } from './servicos/cuidados-adicionais/cuid
     HttpClientModule,
     HttpModule,
     JsonpModule,
+    BrowserAnimationsModule,
   ],
   exports: [
     SearchComponent,
+    ModalSistemaComponent,
   ],
   providers: [],
   bootstrap: [AppComponent]
