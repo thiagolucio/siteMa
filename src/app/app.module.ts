@@ -31,6 +31,7 @@ import { CuidadosAdicionaisComponent } from './servicos/cuidados-adicionais/cuid
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ResponsabilidadeLegalComponent } from './responsabilidade-legal/responsabilidade-legal.component';
 import { ModalSistemaComponent } from './modal-sistema/modal-sistema.component';
+import { ModalLabsComponent } from './modal-labs/modal-labs.component';
 
 
 @NgModule({
@@ -60,7 +61,8 @@ import { ModalSistemaComponent } from './modal-sistema/modal-sistema.component';
     DisposicaoFinalComponent,
     CuidadosAdicionaisComponent,
     ResponsabilidadeLegalComponent,
-    ModalSistemaComponent
+    ModalSistemaComponent,
+    ModalLabsComponent
   ],
   imports: [
     BrowserModule,

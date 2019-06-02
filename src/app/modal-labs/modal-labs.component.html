@@ -1,0 +1,42 @@
+<div class="modal fade slide-in-elliptic-top-fwd" id="modalLabs" tabindex="-1" role="dialog" aria-labelledby="modalLabs" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-dark">
+        <span style="margin: 8px 16px 0 0">
+          <i class="fas fa-flask fa-3x"></i></span>
+          <h5 class="modal-title" id="modalLabs">
+             LABORATÓRIOS DE ANÁLISES
+          </h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <i class="far fa-times-circle text-white"></i>
+        </button>
+      </div>
+      <div class="modal-body" *ngIf="laboratorios$ | async; else loading">
+        <div class="row">
+            <div class="col-md-6 col-xs-12" *ngFor="let item of laboratorios$ | async">
+                <div class="card mb-3">
+                  <div class="img-card">
+                    <img class="card-img-top" style="height: 200px; width: 300px; display: block; margin: auto;" src='{{item.urlmgLogo}}' alt="Logo Laboratorios">                
+                  </div>
+                    <h6 class="card-header">{{item.nomeLab}}</h6>
+                    <div class="card-body">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><i class="fas fa-map-marker-alt mr-2"></i> {{item.cidadeLab}}</li>                       
+                            <li class="list-group-item"><i class="fas fa-phone-volume mr-2"></i> {{item.telLab}}</li>                       
+                            <li class="list-group-item"><i class="fas fa-envelope mr-2"></i> {{item.emailLab}}</li>                       
+                            <li class="list-group-item">
+                              <i class="fas fa-globe-americas mr-2"></i> 
+                              <a href="{{item.siteLab}}" target="_blank">{{item.siteLab}}</a>
+                            </li>                       
+                          </ul>
+                    </div> 
+                  </div>
+            </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-danger" data-dismiss="modal">  <i class="fas fa-times"></i> Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>

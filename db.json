@@ -169,6 +169,62 @@
       "urlmgAterro": "https://fashionjournal24.com/wp-content/uploads/2019/03/construction-tractors.jpg"
     }
   ],
+  "laboratorios": [
+    {
+      "idLab": 1,
+      "urlmgLogo": "/assets/img/aquaplan-logo.jpg",
+      "nomeLab": "Acquaplant Química do Brasil Ltda",
+      "cidadeLab": "Joinville - SC",
+      "telLab": "(47) 3454-4500",
+      "emailLab": "andreia@acquaplant.com.br",
+      "siteLab": "http://www.acquaplant.com.br"
+    },
+    {
+      "idLab": 2,
+      "urlmgLogo": "/assets/img/freitas-logo.jpg",
+      "nomeLab": "Freitag Análises Ambientais e Alimentos Ltda - EPP",
+      "cidadeLab": "Timbó - SC",
+      "telLab": "(47) 3399-0432",
+      "emailLab": "flabs@flabs.com.br",
+      "siteLab": "http://www.flabs.com.br"
+    },
+    {
+      "idLab": 3,
+      "urlmgLogo": "/assets/img/ulabb-logo.jpg",
+      "nomeLab": "LABB Laboratório Beckhauser e Barros",
+      "cidadeLab": "Blumenau - SC",
+      "telLab": "(47) 3339-7682 / (47) 3234-3806",
+      "emailLab": "bolomini@labb.com.br",
+      "siteLab": "http://www.labb.com.br"
+    },
+    {
+      "idLab": 4,
+      "urlmgLogo": "/assets/img/logoOrganica.jpg",
+      "nomeLab": "Orgânica Laboratório de Análises Químicas Ltda",
+      "cidadeLab": "Jaraguá do Sul - SC",
+      "telLab": "(47) 3276-1122 / Fax: (47) 3276-3062",
+      "emailLab": "organica@organicalab.com.br",
+      "siteLab": "http://www.organicalab.com.br"
+    },
+    {
+      "idLab": 5,
+      "urlmgLogo": "/assets/img/senai-logo.jpg",
+      "nomeLab": "Serviço Nacional de Aprendizagem Industrial",
+      "cidadeLab": "Blumenau - SC",
+      "telLab": "(47) 3454-4500",
+      "emailLab": "andreia@acquaplant.com.br",
+      "siteLab": "http://www.acquaplant.com.br"
+    },
+    {
+      "idLab": 6,
+      "urlmgLogo": "/assets/img/umwelt-logo.jpg",
+      "nomeLab": "Umwelt Ltda",
+      "cidadeLab": "Blumenau - SC",
+      "telLab": "(47) 3276-1122 / Fax: (47) 3276-3062",
+      "emailLab": "comercial@umweltambiental.com.br",
+      "siteLab": "http://www.umweltambiental.com.br"
+    }
+  ],
   "videos": [
     {
       "idVideo": 1,
