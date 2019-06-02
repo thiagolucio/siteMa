@@ -34,6 +34,7 @@ import { ModalSistemaComponent } from './modal-sistema/modal-sistema.component';
 import { ModalLabsComponent } from './modal-labs/modal-labs.component';
 import { ContratacaoServicoComponent } from './contratacao-servico/contratacao-servico.component';
 import { LeituraComponent } from './leitura/leitura.component';
+import { TrabalheConoscoComponent } from './trabalhe-conosco/trabalhe-conosco.component';
 
 
 @NgModule({
@@ -66,7 +67,8 @@ import { LeituraComponent } from './leitura/leitura.component';
     ModalSistemaComponent,
     ModalLabsComponent,
     ContratacaoServicoComponent,
-    LeituraComponent
+    LeituraComponent,
+    TrabalheConoscoComponent
   ],
   imports: [
     BrowserModule,

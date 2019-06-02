@@ -14,7 +14,7 @@ import { IncineracaoComponent } from './servicos/incineracao/incineracao.compone
 import { DisposicaoFinalComponent } from './servicos/disposicao-final/disposicao-final.component';
 import { CuidadosAdicionaisComponent } from './servicos/cuidados-adicionais/cuidados-adicionais.component';
 import { ResponsabilidadeLegalComponent } from './responsabilidade-legal/responsabilidade-legal.component';
-import { ModalSistemaComponent } from './modal-sistema/modal-sistema.component';
+import { TrabalheConoscoComponent } from './trabalhe-conosco/trabalhe-conosco.component';
 
 
 
@@ -33,6 +33,7 @@ const routes: Routes = [
   { path: 'disposicaoFinal', component: DisposicaoFinalComponent},
   { path: 'cuidadosAdicionais', component: CuidadosAdicionaisComponent},
   { path: 'responsabilidadeLegal', component: ResponsabilidadeLegalComponent},
+  { path: 'trabalheConosco', component: TrabalheConoscoComponent},
 
 ];
 

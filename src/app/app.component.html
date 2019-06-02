@@ -1,11 +1,19 @@
-<div>
+<div id="header">
     <app-topmenu>{{title}}</app-topmenu>
     <app-search></app-search>
+</div>
+
+<div id="content">
+    <div id="main">
     <!-- router-outlet é o componente de rotas do Angular e não deve ser removido daqui pois as rotas irão parar de funcionar -->
     <router-outlet></router-outlet>
     <app-modal-sistema></app-modal-sistema>
     <app-modal-labs></app-modal-labs>
     <app-contratacao-servico></app-contratacao-servico>
     <app-leitura></app-leitura>
+    </div>
+</div>
+
+<div id="footer">
     <app-footer></app-footer>
 </div>

@@ -1,12 +1,36 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i');
 
 
+* {
+  margin: 0;
+  padding: 0;   
+}
+
 html, body {
     visibility: visible;
     // font-family: 'Roboto', sans-serif;
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
-    font-weight: 400;   
+    font-weight: 400;
+    height: 100%;  
+}
+
+
+#content {
+  min-height: 100%;
+}
+
+#main {
+  overflow: auto;
+  padding-bottom: 345px;
+}
+
+#footer {
+  position: relative;
+  height: 345px;
+  margin-top: -345px;
+  clear: both;
+  overflow: hidden;
 }
 
 .bg-dark {background-color: #2C2C2C!important;}
@@ -15,14 +39,12 @@ html, body {
 .font14 {font-size: 12px;}
 .font16 {font-size: 12px;}
 
-
 .padding24 {padding: 24px 0;}
 .padding30 {padding: 30px 0;}
 .padding40 {padding: 40px 0;}
 .padding-bottom30 {padding-bottom: 30px;}
 
-.container-topo {
-    // background: linear-gradient(to bottom, #2C2C2C 0%,#2C2C2C 85%,#2C2C2C 85%,white 15%,white 100%);
+.container-topo {    
     background: #2C2C2C;
     padding: 0;
     padding-bottom: 2px;
